@@ -1,0 +1,33 @@
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--primary-light);
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px 4px 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(0, 107, 255, 0.2);
+}
+
+.remove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  opacity: 0.6;
+  padding: 1px;
+  border-radius: 50%;
+  transition: opacity var(--duration), background var(--duration);
+}
+.remove:hover {
+  opacity: 1;
+  background: rgba(0, 107, 255, 0.15);
+}
